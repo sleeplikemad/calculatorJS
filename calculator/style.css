@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  html {
+    font-size: 24px;
+    font-family: 'Unica One', cursive;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0;
+  }
+  
+  #app h1 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8px;
+  }
+
+  .calculator {
+    display : grid;
+    grid-template-rows : 180px 1fr;
+    width : 480px;
+    height : 600px;
+    background : rgb(172, 172, 172);
+    border : 2px solid yellow;
+    padding : 24px 18px 18px;
+  }
+
+  .display {
+    display : grid;
+    height : 160px;
+    grid-template-rows : 40px 50px 60px;
+    grid-template-columns : repeat(5,1fr);
+    box-shadow : inset 2px 2px 12px -6px black, inset -2px -2px 12px -6px black;
+
+    border : 2px solid yellow;
+    border-radius : 12px;
+    grid-row : 1;
+    padding : 5px 8px;
+    background : plum;
+    font-size : 40px;
+  }
+
+  .held-label {
+    grid-column : 1/6;
+    font-size : 30px;
+    text-decoration : underline;
+  }
+
+  .held-value {
+    grid-column : 1/6;
+  }
+
+  .next-operation {
+    grid-column : 1;
+  }
+
+  .next-value {
+    grid-column : 2/6;
+    text-align : right;
+  }
+
+  .controls {
+    display : grid;
+    grid-row : 2;
+    grid-template-rows : repeat(5, 1fr);
+    grid-template-columns : repeat(4, 1fr);
+    background-color :rgb(172, 172, 172);
+  }
+
+  button {
+    padding : 10px;
+    font-family : "Coda", cursive;
+    font-weight : bold;
+    font-size : 25px;
+    border-radius : 25px;
+    margin : 5px;
+    box-shadow : 5px 5px 8px -4px black, 0 0 6px -3px #f00;
+  }
+
+  .memory {
+    display : grid;
+    grid-row : 1;
+    grid-column : 1/4;
+    /*grid-template-columns : */
+  }
+
+  .clear-all {
+    grid-column : 1;
+  } 
+
+  .clear-entry {
+    grid-column : 2;
+  }
+
+  .operations {
+    display : grid;
+    grid-column : 4/5;
+    grid-row : 1/6;
+    grid-template-rows : subgrid;
+  }
+
+  .add {
+    grid-row : 2/3;
+  }
+
+  .subtract {
+    grid-row : 3;
+  }
+
+  .multiply {
+    grid-row : 4;
+  }
+
+  .divide {
+    grid-row : 5;
+  }
+
+  .digits {
+    display : grid;
+    grid-column : 1/4;
+    grid-row : 2/6;
+    grid-template-rows : repeat(4, 1fr);
+    grid-template-columns : repeat(3, 1fr);
+  }
+
+  #long {
+    grid-column : 2/4;
+  }
+
+  .memory button {
+    background-color :gold;
+  }
+
+  .operations button {
+    background-color : orange;
+  }
+
+  .digits button {
+    background-color : white;
+  }
+
+  .digits button
+
+  .clear-all {
+    grid-row : 1;
+    grid-column : 1/3;
+  }
